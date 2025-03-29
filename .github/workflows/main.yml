@@ -26,7 +26,7 @@ jobs:
     - name: Set up Wget and Libicu
       run: |
         apt update -y -qq
-        apt install -y -qqq wget libicu63
+        apt install -y -qqq wget libicu76
     - name: Set up .NET
       uses: actions/setup-dotnet@v4
       with:
