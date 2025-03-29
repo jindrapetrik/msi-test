@@ -23,10 +23,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3 
-    - name: Set up Wget
+    - name: Set up Wget and Libicu
       run: |
         apt update -y -qq
-        apt install -y -qq wget
+        apt install -y -qqq wget libicu63
     - name: Set up .NET
       uses: actions/setup-dotnet@v4
       with:
